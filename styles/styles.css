@@ -975,7 +975,7 @@ section {
 .shapes {
   position: relative;
   height: 100vh;
-  width: 50vw;
+  width: 63vw;
   background: #2128bd;
   overflow: hidden;
 }
@@ -1008,8 +1008,8 @@ section {
 }
 
 .content {
-  top: 300px;
-  left: 900px;
+  top: 200px;
+  left: 714px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
