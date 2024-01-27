@@ -239,6 +239,13 @@ section {
   font-weight: 700;
   color: var(--color-secondary);
 }
+
+.medium-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
 .about-container .right-about .about-item .abt-text .small-text {
   padding-left: 3rem;
   position: relative;
