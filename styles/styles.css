@@ -653,6 +653,8 @@ section {
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+  background-color: #000;
+  border-radius: 10px;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
@@ -846,7 +848,7 @@ section {
 }
 @media screen and (max-width: 1432px) {
   .container {
-    padding: 7rem 11rem;
+    padding: 1rem 4rem;
   }
 
   .contact-content-con {
@@ -1016,23 +1018,17 @@ section {
 
 .content {
   top: 200px;
-  left: 714px;
+  left: 50%; /* Changed to center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 50vh;
-  width: 34vw;
+  width: 50%; /* Adjusted to 70% of the viewport width */
   background: #fff;
   mix-blend-mode: screen;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px; /* Combined padding-left and padding-right */
   border-radius: 10px;
   flex-direction: column;
 }
@@ -1325,5 +1321,26 @@ li:nth-child(9n-5)::after {
   }
   li:nth-child(14n-6) {
     grid-column-start: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%; /* Adjusted to 90% of the viewport width */
+    padding: 0 5px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* For tablets and larger phones */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    width: 60%; /* Adjusted to 60% of the viewport width */
+  }
+}
+
+/* For larger screens like laptops and desktops */
+@media (min-width: 1024px) {
+  .content {
+    width: 50%; /* Adjusted to 50% of the viewport width */
   }
 }
